@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Brand" package="" visibility="publıc" xPosition="129.0" yPosition="214.0">
+      <Fields>
+        <Field name="brandName" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getSubBrand" returnType="DBCollection" visibility="protected">
+          <Argument type="DBCollection" name="dbcol"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Category" package="" visibility="publıc" xPosition="112.0" yPosition="547.0">
+      <Fields>
+        <Field name="categoryName" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getCategoryRecord" returnType="DBCollection" visibility="protected">
+          <Argument type="DBCollection" name="dbcol"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Chat" package="" visibility="publıc" xPosition="562.0" yPosition="708.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="chating" returnType="ArrayList&lt;String&gt;" visibility="publıc">
+          <Argument type="String" name="uText"/>
+          <Argument type="DBCollection" name="dbcol"/>
+          <Argument type="ArrayList&lt;String&gt;" name="recover"/>
+        </Method>
+        <Method name="decideRandom" returnType="ArrayList&lt;String&gt;" visibility="protected">
+          <Argument type="ArrayList&lt;String&gt;" name="messageList"/>
+        </Method>
+        <Method name="editting" returnType="Iterable&lt;DBObject&gt;" visibility="protected">
+          <Argument type="String" name="msj"/>
+          <Argument type="String" name="kat"/>
+          <Argument type="Iterable&lt;DBObject&gt;" name="output"/>
+        </Method>
+        <Method name="selectedRecords" returnType="ArrayList&lt;String&gt;" visibility="protected">
+          <Argument type="String" name="uText"/>
+          <Argument type="ArrayList&lt;String&gt;" name="recover"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ChatBotFormGUI" package="" visibility="publıc" xPosition="473.0" yPosition="224.0">
+      <Fields>
+        <Field name="donut" type="ArrayList&lt;String&gt;" visibility="package"/>
+        <Field name="dbcol" type="DBCollection" visibility="package"/>
+        <Field name="Controls" type="JOption" visibility="prıvate"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="prıvate"/>
+        <Method name="formWindowOpened" returnType="java.awt.event.WindowEvent" visibility="prıvate">
+          <Argument type="java.awt.event.WindowEvent" name="evt"/>
+        </Method>
+        <Method name="jListCategoryValueChanged" returnType="javax.swing.event.ListSelectionEvent" visibility="prıvate">
+          <Argument type="javax.swing.event.ListSelectionEvent" name="evt"/>
+        </Method>
+        <Method name="jListTypeValueChanged" returnType="javax.swing.event.ListSelectionEvent" visibility="prıvate">
+          <Argument type="javax.swing.event.ListSelectionEvent" name="evt"/>
+        </Method>
+        <Method name="jListBrandValueChanged" returnType="javax.swing.event.ListSelectionEvent" visibility="prıvate">
+          <Argument type="javax.swing.event.ListSelectionEvent" name="evt"/>
+        </Method>
+        <Method name="btnInsertActionPerformed" returnType="java.awt.event.ActionEvent" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnDeleteActionPerformed" returnType="java.awt.event.ActionEvent" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField1ActionPerformed" returnType="java.awt.event.ActionEvent" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnSearchModelOnTwitterActionPerformed" returnType="java.awt.event.ActionEvent" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="dosyayaYaz" returnType="ArrayList&lt;TWEETS&gt;" visibility="prıvate">
+          <Argument type="ArrayList&lt;TWEETS&gt;" name="tweet"/>
+        </Method>
+        <Method name="listRead" returnType="ArrayList&lt;String&gt;" visibility="prıvate">
+          <Argument type="ArrayList&lt;String&gt;" name="donut"/>
+        </Method>
+        <Method name="mongoConnection" returnType="String" visibility="publıc">
+          <Argument type="String" name="host"/>
+          <Argument type="Integer" name="portNo"/>
+          <Argument type="String" name="dbName"/>
+          <Argument type="String" name="collectionName"/>
+        </Method>
+        <Method name="getCategory" returnType="void" visibility="publıc"/>
+        <Method name="uploadToLists" returnType="Iterable&lt;DBObject&gt;" visibility="publıc">
+          <Argument type="JList" name="list"/>
+          <Argument type="Iterable&lt;DBObject&gt;" name="output"/>
+        </Method>
+        <Method name="main" returnType="String" visibility="publıc" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Model" package="" visibility="publıc" xPosition="129.0" yPosition="64.0">
+      <Fields>
+        <Field name="modelName" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getSubModel" returnType="DBCollection" visibility="protected">
+          <Argument type="DBCollection" name="dbcol"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tweets" package="" visibility="publıc" xPosition="987.0" yPosition="45.0">
+      <Fields>
+        <Field name="polarity" type="float" visibility="publıc"/>
+        <Field name="tweet" type="String" visibility="publıc"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getText" returnType="String" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="TwitterHastag" package="" visibility="publıc" xPosition="680.0" yPosition="64.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="retrieveTweets" returnType="String" visibility="publıc">
+          <Argument type="String" name="myHshTage"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Types" package="" visibility="publıc" xPosition="122.0" yPosition="370.0">
+      <Fields>
+        <Field name="typeName" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getSubRecords" returnType="DBCollection" visibility="protected">
+          <Argument type="DBCollection" name="dbcol"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Types" target="Category"/>
+    <IsRelation name="is" source="Brand" target="Types"/>
+    <IsRelation name="is" source="Category" target="ChatBotFormGUI"/>
+    <IsRelation name="is" source="TwitterHastag" target="ChatBotFormGUI"/>
+    <IsRelation name="is" source="Model" target="Brand"/>
+    <IsRelation name="is" source="Chat" target="ChatBotFormGUI"/>
+    <IsRelation name="is" source="Tweets" target="TwitterHastag"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TWEETS">
+  <ClassDiagramComponents>
+    <Class name="TWEETS" package="" visibility="publıc" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="polarity" type="float" visibility="publıc"/>
+        <Field name="tweet" type="String" visibility="publıc"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

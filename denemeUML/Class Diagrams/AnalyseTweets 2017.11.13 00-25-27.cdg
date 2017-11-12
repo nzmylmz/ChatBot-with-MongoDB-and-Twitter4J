@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="AnalyseTweets">
+  <ClassDiagramComponents>
+    <Class name="AnalyseTweets" package="" visibility="publıc" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="tweets" type="String[]" visibility="prıvate" isFinal="true"/>
+        <Field name="POLARITY" type="float[]" visibility="prıvate" isFinal="true"/>
+        <Field name="average" type="double" visibility="prıvate"/>
+        <Field name="file" type="Scanner" visibility="prıvate"/>
+        <Field name="temp_word" type="String[]" visibility="prıvate"/>
+        <Field name="TEMPO" type="TWEETS" visibility="package"/>
+        <Field name="new_tweet" type="ArrayList&lt;TWEETS&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="String" name="myHshTage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="openFile" returnType="void" visibility="publıc"/>
+        <Method name="analyse" returnType="ArrayList&lt;TWEETS&gt;" visibility="publıc"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
